@@ -133,7 +133,7 @@ public class SignUpActivity extends AppCompatActivity {
         try {
             List<NetworkInterface> networkInterfacesList = Collections.list(NetworkInterface.getNetworkInterfaces());
 
-            String mac= "";
+            String stringMac= "";
             for (NetworkInterface networkInterface : networkInterfacesList) {
                 if (networkInterface.getName().equalsIgnoreCase("wlan0")) {
                     for (int i = 0; i < networkInterface.getHardwareAddress().length; i++) {
@@ -142,7 +142,7 @@ public class SignUpActivity extends AppCompatActivity {
                             macByte = "0" + macByte;
 
                         }
-                        mac = mad + macByte.toUpperCase() + ":.";
+                        stringMac = stringMac + macByte.toUpperCase() + ":.";
 
 
                     }
@@ -152,7 +152,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
             }
-            madd = mac.substring(0, mac.length() - 1);
+            madd = stringMac.substring(0, mac.length() - 1);
         } catch (SocketException e) {
             e.printStackTrace();
         }
