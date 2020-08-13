@@ -31,6 +31,6 @@ public interface ApiInterface {
     Call<User> userLogin(@Field("email_id") String email_id,
                          @Field("password") String password,
                          @Field("madd") String madd,
-                         @Field("mad_form") String mad_form);
+                         @Field("madd_form") String madd_form);
 
 }
