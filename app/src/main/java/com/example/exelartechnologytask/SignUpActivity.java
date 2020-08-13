@@ -44,6 +44,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         initView();
         getMacAddress();
+        getTimeZone();
 
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,6 +158,14 @@ public class SignUpActivity extends AppCompatActivity {
         } catch (SocketException e) {
             e.printStackTrace();
         }
+
+    }
+    private  void getTimeZone()
+    {
+        TimeZone tz=TimeZone.getDefault();
+        timezone=tz.getDisplayName();
+
+        Toast.makeText(this, ""+tz.getDisplayName(), Toast.LENGTH_SHORT).show();
 
     }
 }
