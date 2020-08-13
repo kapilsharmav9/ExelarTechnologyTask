@@ -32,7 +32,7 @@ public class SignUpActivity extends AppCompatActivity {
     ProgressDialog pd;
     public static ApiInterface apiInterface;
     String Fname, Lname, Address, Pasword, Email, Mobilenumber, mad;
-    final String mad_form = "Android";
+    final String madd_from = "Android";
     String madd;
     String timezone = "0";
     String newsLetter = "Indian";
@@ -89,7 +89,7 @@ public class SignUpActivity extends AppCompatActivity {
             Address = eAddress.getText().toString();
             Mobilenumber = "91"+eMobileNumber.getText().toString();
             Call<User> call = SignUpActivity.apiInterface.
-                    userRegister(Fname, Lname, Email, Pasword, Mobilenumber, madd, mad_form,newsLetter,Address,timezone);
+                    userRegister(Fname, Lname, Email, Pasword, Mobilenumber, madd, madd_from,newsLetter,Address,timezone);
             call.enqueue(new Callback<User>() {
                 @Override
                 public void onResponse(Call<User> call, Response<User> response) {
