@@ -34,8 +34,8 @@ public class SignUpActivity extends AppCompatActivity {
     String Fname, Lname, Address, Pasword, Email, Mobilenumber, mad;
     final String madd_from = "Android";
     String madd;
-    String timezone = "0";
-    String newsLetter = "Indian";
+    String timezone ;
+    String newsLetter = "0";
     Animation animation;
 
     @Override
