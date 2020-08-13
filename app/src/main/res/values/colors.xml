@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3ac2e9</color>
+    <color name="colorPrimaryDark">#4DDBE8</color>
+    <color name="colorAccent">#3ac2e9</color>
+    <color name="bag1">#3ac2e9</color>
+    <color name="bag2">#f0f8fa</color>
+    <color name="bag3">#2DC4EF</color>
+    <color name="black">#383939</color>
+    <color name="grey">#7b7c7c</color>
+    <color name="lgrey">#747474</color>
+
+</resources>

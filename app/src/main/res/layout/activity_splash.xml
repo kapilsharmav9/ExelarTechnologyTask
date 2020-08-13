@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/logo_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exelar Technology"
+        android:textSize="40sp"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/bag2"
+        />
+
+</RelativeLayout>
