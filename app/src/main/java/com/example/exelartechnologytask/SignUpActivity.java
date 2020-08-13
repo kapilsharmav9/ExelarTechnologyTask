@@ -142,7 +142,7 @@ public class SignUpActivity extends AppCompatActivity {
                             macByte = "0" + macByte;
 
                         }
-                        stringMac = stringMac + macByte.toUpperCase() + ":.";
+                        stringMac = stringMac + macByte.toUpperCase() + ":";
 
 
                     }
@@ -153,6 +153,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
             madd = stringMac.substring(0, mac.length() - 1);
+             //for testing purpose// Toast.makeText(getApplicationContext(),""+madd,Toast.LENGTH_LONG).show();
         } catch (SocketException e) {
             e.printStackTrace();
         }
